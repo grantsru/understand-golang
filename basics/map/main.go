@@ -27,7 +27,22 @@ func two() {
 	fmt.Println(offset)
 }
 
+func three() {
+	greeting := map[int]string{
+		0: "Hello",
+		1: "Bonjour",
+		2: "Ciao",
+		3: "Buenos dias",
+		4: "Bongiorno",
+	}
+
+	for key, val := range greeting {
+		fmt.Println(key, " - ", val)
+	}
+}
+
 func main() {
 	one()
 	two()
+	three()
 }
